@@ -8,23 +8,21 @@
 $(call inherit-product, device/samsung/mt6765-common/mt6765.mk)
 
 # Dalvik Heap Configuration
-$(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
-
-TARGET_IS_WIFI-ONLY := true
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1340
-TARGET_SCREEN_WIDTH := 800
+TARGET_SCREEN_HEIGHT := 1600
+TARGET_SCREEN_WIDTH := 720
 
 # Shipping API Level
-PRODUCT_SHIPPING_API_LEVEL := 30
+PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Tablet
-PRODUCT_CHARACTERISTICS := tablet
+PRODUCT_CHARACTERISTICS := phone
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit from vendor blobs
-$(call inherit-product-if-exists, vendor/samsung/gta7litewifi/gta7litewifi-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/a04e/a04e-vendor.mk)
