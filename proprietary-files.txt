@@ -32,9 +32,3 @@ vendor/tee/driver/00000000-4d54-4b5f-4246-564452323634
 vendor/tee/driver/00000000-4d54-4b5f-4246-57564e647276
 vendor/tee/driver/18d9f073-18a5-4ade-9def-875e07f7f293_
 vendor/tee/startup.tzar
-
-# Keymint
-vendor/lib64/libskeymint10device.so
-vendor/lib64/libskeymint_cli.so
-vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.hardware.security.keymint-service.samsung
-vendor/lib64/vendor.samsung.hardware.keymint-V1-ndk_platform.so
