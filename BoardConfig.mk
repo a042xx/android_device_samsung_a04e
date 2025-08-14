@@ -9,6 +9,9 @@ DEVICE_PATH := device/samsung/a04e
 # Inherit from mt6765-common
 include device/samsung/mt6765-common/BoardConfigCommon.mk
 
+# Kernel
+TARGET_KERNEL_CONFIG := rsuntk-a04e_defconfig
+
 # Display
 TARGET_SCREEN_DENSITY := 300
 
