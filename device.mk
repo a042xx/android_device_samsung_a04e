@@ -5,7 +5,7 @@
 #
 
 # Inherit from mt6765-common
-$(call inherit-product, device/samsung/mt6765-common/mt6765.mk)
+$(call inherit-product, device/samsung/mt6765-common/common.mk)
 
 # Dalvik Heap Configuration
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
